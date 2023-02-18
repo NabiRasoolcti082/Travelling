@@ -612,91 +612,6 @@ header .search-bar-container label:hover{
   color:var(--orange);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media queries  */
-
-@media (max-width:1200px){
-
-  html{
-    font-size: 55%;
-  }
-
-}
-
-@media (max-width:991px){
-
-  header{
-    padding:2rem;
-  }
-
-  section{
-    padding:2rem;
-  }
-
-}
-
-@media (max-width:768px){
-  html{
-    font-size: 45%;
-  }
-
-  #menu-bar{
-    display: initial;
-  }
-
-  header .navbar{
-    position: absolute;
-    top:100%; right:0; left: 0;
-    background: #333;
-    border-top: .1rem solid rgba(255,255,255,.2);
-    padding:1rem 2rem;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-
-  header .navbar.active{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-
-  header .navbar a{
-    display: block;
-    border-radius: .5rem;
-    padding:1.5rem;
-    margin:1.5rem 0;    
-    background:#222;
-  }
-
-}
-
-@media (max-width:450px){
-
-  html{
-    font-size: 50%;
-  }
-
-  .heading span{
-    font-size: 2.5rem;
-  }
-
-  .contact .row form .inputBox input{
-    width:100%;
-  }
-
-}
-
 .login{
   background-color:black;
   color: rgb(255, 255, 255);
@@ -760,4 +675,132 @@ header .search-bar-container label:hover{
 .track{
   height:50%;
   width: 100%;
+}
+html, body {
+  // Smooth scroll always for html tag
+  scroll-behavior: smooth;
+  // scroll-snap-type: y; // <-- snap in y axis
+}
+/* media queries  */
+
+@media (max-width:800px){
+
+  html{
+    font-size: 55%;
+  }
+
+}
+
+@media (max-width:991px){
+
+  header{
+    padding:2rem;
+  }
+
+  section{
+    padding:2rem;
+  }
+  
+
+}
+
+@media (max-width:768px){
+
+  #menu-bar{
+    display: initial;
+  }
+
+  header .navbar{
+    position: absolute;
+    top:100%; right:0; left: 0;
+    background: #333;
+    border-top: .1rem solid rgba(255,255,255,.2);
+    padding:1rem 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .navbar a{
+    display: block;
+    border-radius: .5rem;
+    padding:1.5rem;
+    margin:1.5rem 0;    
+    background:#222;
+  }
+ 
+
+}
+
+@media (max-width:450px){
+
+  html{
+    font-size: 50%;
+  }
+
+  .heading span{
+    font-size: 2.5rem;
+  }
+
+  .contact .row form .inputBox input{
+    width:100%;
+  }
+  html,body{
+    overflow-x: hidden;
+}
+ 
+  
+}
+.login{
+  background-color:black;
+  color: rgb(255, 255, 255);
+  font-size: xx-large;
+  justify-content: center;
+}
+.login-a{
+  color:#fff;
+  font-size: 2rem;
+  margin:0 .8rem;
+}
+.details{
+  size: 200%;
+  font-size: 15px;
+}
+.label{
+  font-size: xx-large;
+}
+.more-pics .see-more{
+  display:flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+ .more-pics .see-more .box{
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  border:1rem solid #fff;
+  border-radius: .5rem;
+  flex:1 1 30rem;
+  height: 25rem;
+  position: relative;
+}
+.more-pics .see-more .box img{
+  height:100%;
+  width:100%;
+}
+.more-pics .see-more .box:hover{
+  height:100%;
+  width:100%;
+  top:-100%; left:0;
+  text-align: center;
+  background:linear-gradient(rgb(146, 145, 145),#009688);
+  padding:2rem;
+  padding-top: 5rem;
+  transition:1s;
+  z-index: 1;
+}
+.more-pics .see-more .box:hover .content{
+  top:0;
+  
 }
