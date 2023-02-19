@@ -73,7 +73,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:2rem 9%;
+  padding:1.3rem 9%;
 }
 
 header .logo{
@@ -310,7 +310,7 @@ header .search-bar-container label:hover{
 }
 
 .book .row .image img{
-  width:100%;
+  width:90%;
 }
 
 .book .row form{
@@ -803,4 +803,9 @@ html, body {
 .more-pics .see-more .box:hover .content{
   top:0;
   
+}
+.logor{
+  height:100%;
+  width:100%;
+  padding:20px 40px;
 }
